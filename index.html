@@ -3,33 +3,82 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="refresh" content="0; url=./privacy/">
-    <link rel="canonical" href="https://michaeljbarry.github.io/hokushin-privacy/privacy/">
-    <title>Hokushin Privacy Policy</title>
+    <title>App Privacy Policies</title>
     <style>
+      :root {
+        color-scheme: light;
+        --ink: #17201b;
+        --muted: #526057;
+        --line: #d9d5cc;
+        --paper: #fffdfa;
+        --wash: #f7f4ee;
+        --accent: #245f4b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
       body {
         margin: 0;
         min-height: 100vh;
         display: grid;
         place-items: center;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        color: #17201b;
-        background: #f7f4ee;
+        font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--ink);
+        background: var(--wash);
       }
 
       main {
-        width: min(34rem, calc(100% - 2rem));
+        width: min(40rem, calc(100% - 2rem));
+        padding: 3rem 0;
+      }
+
+      h1 {
+        margin: 0 0 1rem;
+        font-size: clamp(2.25rem, 6vw, 4rem);
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      p {
+        margin: 0 0 1.5rem;
+        color: var(--muted);
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 0.75rem;
       }
 
       a {
-        color: #245f4b;
+        display: block;
+        padding: 1rem;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        color: var(--accent);
+        background: var(--paper);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      a:hover,
+      a:focus {
+        text-decoration: underline;
       }
     </style>
   </head>
   <body>
     <main>
-      <h1>Hokushin Privacy Policy</h1>
-      <p>Redirecting to <a href="./privacy/">the Hokushin Privacy Policy</a>.</p>
+      <h1>App Privacy Policies</h1>
+      <p>Public privacy policy pages for apps by Michael J. Barry.</p>
+      <ul>
+        <li><a href="./privacy/">Hokushin Privacy Policy</a></li>
+        <li><a href="./kawaii-japanese-flash-cards/privacy/">Kawaii Japanese Flash Cards Privacy Policy</a></li>
+      </ul>
     </main>
   </body>
 </html>
