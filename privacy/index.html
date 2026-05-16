@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Privacy Policy for the Hokushin app.">
+    <link rel="canonical" href="https://michaeljbarry.github.io/hokushin/privacy/">
+    <title>Hokushin Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #17201b;
+        --muted: #526057;
+        --line: #d9d5cc;
+        --paper: #fffdfa;
+        --wash: #f7f4ee;
+        --accent: #245f4b;
+        --accent-soft: #e5efe9;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--ink);
+        background: var(--wash);
+      }
+
+      body {
+        margin: 0;
+      }
+
+      header {
+        border-bottom: 1px solid var(--line);
+        background: var(--paper);
+      }
+
+      .wrap {
+        width: min(72rem, calc(100% - 2rem));
+        margin: 0 auto;
+      }
+
+      .hero {
+        padding: 4rem 0 3rem;
+      }
+
+      .eyebrow {
+        margin: 0 0 0.75rem;
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.25rem, 6vw, 4.75rem);
+        line-height: 0.98;
+        letter-spacing: 0;
+      }
+
+      .intro {
+        max-width: 43rem;
+        margin: 1.25rem 0 0;
+        color: var(--muted);
+        font-size: 1.12rem;
+      }
+
+      main {
+        padding: 2rem 0 4rem;
+      }
+
+      .policy {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 15rem;
+        gap: 3rem;
+        align-items: start;
+      }
+
+      article {
+        min-width: 0;
+      }
+
+      nav {
+        position: sticky;
+        top: 1rem;
+        padding: 1rem;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--paper);
+      }
+
+      nav h2 {
+        margin-top: 0;
+        font-size: 0.9rem;
+      }
+
+      nav a {
+        display: block;
+        padding: 0.28rem 0;
+        color: var(--muted);
+        font-size: 0.9rem;
+        text-decoration: none;
+      }
+
+      nav a:hover,
+      nav a:focus {
+        color: var(--accent);
+        text-decoration: underline;
+      }
+
+      section {
+        padding: 1.5rem 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      h2 {
+        margin: 0 0 0.75rem;
+        font-size: 1.45rem;
+        line-height: 1.2;
+        letter-spacing: 0;
+      }
+
+      h3 {
+        margin: 1.2rem 0 0.4rem;
+        font-size: 1.05rem;
+        letter-spacing: 0;
+      }
+
+      p,
+      ul {
+        margin: 0.6rem 0;
+      }
+
+      ul {
+        padding-left: 1.25rem;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      .summary {
+        padding: 1rem;
+        border: 1px solid #c7d8cd;
+        border-radius: 8px;
+        background: var(--accent-soft);
+      }
+
+      .summary p {
+        margin: 0;
+      }
+
+      .metadata {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .metadata span {
+        padding: 0.28rem 0.6rem;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--wash);
+      }
+
+      footer {
+        padding: 2rem 0;
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+        background: var(--paper);
+      }
+
+      @media (max-width: 52rem) {
+        .hero {
+          padding: 3rem 0 2rem;
+        }
+
+        .policy {
+          display: block;
+        }
+
+        nav {
+          position: static;
+          margin-bottom: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap hero">
+        <p class="eyebrow">Privacy Policy</p>
+        <h1>Hokushin</h1>
+        <p class="intro">
+          Hokushin is a personal operating console for Apple platforms. This policy explains what information the app uses, where it is stored, and how optional services handle data when you choose to connect them.
+        </p>
+        <div class="metadata" aria-label="Policy metadata">
+          <span>Effective May 16, 2026</span>
+          <span>Applies to Hokushin for macOS, iOS, and iPadOS</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap policy">
+      <article>
+        <div class="summary">
+          <p>
+            Short version: Hokushin is designed as a local-first app. Your operational data is stored on your devices and, when sync is enabled, in your private iCloud account through CloudKit. Hokushin does not sell personal data.
+          </p>
+        </div>
+
+        <section id="data-we-use">
+          <h2>Information Hokushin Uses</h2>
+          <p>
+            Hokushin may store information you enter into the app, including tasks, projects, notes, priorities, plans, review history, scheduling preferences, and app settings.
+          </p>
+          <p>
+            If you connect optional integrations, Hokushin may use selected information from those services to help create operational context:
+          </p>
+          <ul>
+            <li>Calendar information such as event titles, timing, calendar names, and availability signals.</li>
+            <li>Email information such as sender, subject, dates, message identifiers, excerpts, summaries, and links back to the source message.</li>
+            <li>Voice input for Trish voice interactions after you grant microphone and speech recognition permissions.</li>
+            <li>Selected HealthKit signals after you grant Health access, including sleep, heart-rate-derived readiness signals, step count, active energy, stand hours, and related derived summaries.</li>
+          </ul>
+        </section>
+
+        <section id="local-storage">
+          <h2>Local Storage and iCloud Sync</h2>
+          <p>
+            Hokushin stores app data locally on your device using Apple platform storage. When CloudKit sync is enabled, Hokushin syncs app records through Apple's private CloudKit infrastructure so your own devices can stay in sync.
+          </p>
+          <p>
+            CloudKit data is associated with your Apple ID and private iCloud database. The developer does not operate a separate Hokushin server for this app data.
+          </p>
+        </section>
+
+        <section id="healthkit">
+          <h2>HealthKit</h2>
+          <p>
+            Hokushin uses HealthKit only after you grant permission. Health information is used to calculate advisory operational readiness context. It is not used to make medical claims, diagnose conditions, or automatically change your schedule.
+          </p>
+          <p>
+            Raw HealthKit samples are intended to remain on device. Cross-device Human State availability uses derived summaries only, such as readiness and freshness metadata, rather than raw health samples or raw health history.
+          </p>
+          <p>
+            You can manage or revoke Hokushin's Health access in Apple Health settings.
+          </p>
+        </section>
+
+        <section id="voice">
+          <h2>Microphone and Speech Recognition</h2>
+          <p>
+            Hokushin uses microphone and speech recognition permissions for explicit Trish voice interactions. Spoken input is converted into text so Hokushin can interpret operational commands and questions.
+          </p>
+          <p>
+            Apple platform speech recognition and dictation services may process audio or transcripts according to Apple's privacy practices. Hokushin does not use voice input for advertising.
+          </p>
+        </section>
+
+        <section id="integrations">
+          <h2>Email, Calendar, and Provider Integrations</h2>
+          <p>
+            If you connect Google, Microsoft, or other supported providers, Hokushin uses the access you authorize to read selected email and calendar data for planning, intake, review, and meeting context. Hokushin stores provider credentials in the system Keychain when supported.
+          </p>
+          <p>
+            Provider data remains subject to the privacy policy and account controls of the provider you connect. You can disconnect integrations or revoke access from the provider's account security settings.
+          </p>
+        </section>
+
+        <section id="ai">
+          <h2>AI and Local Models</h2>
+          <p>
+            Hokushin includes deterministic logic and may offer optional AI-assisted features, including local model workflows and API-backed providers such as OpenAI when configured by the user. Remote AI features may send the relevant prompt and app context needed to answer the request or produce a summary.
+          </p>
+          <p>
+            If you configure an OpenAI API key inside the app, Hokushin stores it in the local macOS Keychain when supported. Remote AI providers process submitted data according to their own terms and privacy practices.
+          </p>
+        </section>
+
+        <section id="sharing">
+          <h2>Sharing and Sale of Data</h2>
+          <p>
+            Hokushin does not sell personal data. Hokushin does not use personal data for third-party advertising.
+          </p>
+          <p>
+            Hokushin shares data only when needed for features you choose to use, such as Apple CloudKit sync, Apple speech recognition, connected email or calendar providers, or optional remote AI providers.
+          </p>
+        </section>
+
+        <section id="retention">
+          <h2>Retention and Deletion</h2>
+          <p>
+            Hokushin keeps local app data until you delete it in the app, remove the app, reset local storage, or delete related iCloud data. Data synced through iCloud may remain available to your other signed-in devices until removed from iCloud.
+          </p>
+          <p>
+            Provider tokens and API keys can be removed from the app or the relevant system/provider settings when those controls are available.
+          </p>
+        </section>
+
+        <section id="security">
+          <h2>Security</h2>
+          <p>
+            Hokushin relies on Apple platform protections such as app sandboxing, Keychain storage for supported secrets, and iCloud account security for CloudKit sync. No security method is perfect, so you should protect your device passcode, Apple ID, and connected provider accounts.
+          </p>
+        </section>
+
+        <section id="children">
+          <h2>Children's Privacy</h2>
+          <p>
+            Hokushin is a productivity app and is not directed to children. The app is not intended to knowingly collect personal information from children.
+          </p>
+        </section>
+
+        <section id="changes">
+          <h2>Changes to This Policy</h2>
+          <p>
+            This policy may be updated as Hokushin changes. The effective date at the top of the page will be updated when material changes are made.
+          </p>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>
+            For privacy questions about Hokushin, contact the developer through the public GitHub profile at <a href="https://github.com/michaeljbarry">github.com/michaeljbarry</a>.
+          </p>
+        </section>
+      </article>
+
+      <nav aria-label="Privacy policy sections">
+        <h2>On This Page</h2>
+        <a href="#data-we-use">Information Used</a>
+        <a href="#local-storage">Local Storage</a>
+        <a href="#healthkit">HealthKit</a>
+        <a href="#voice">Voice</a>
+        <a href="#integrations">Integrations</a>
+        <a href="#ai">AI</a>
+        <a href="#sharing">Sharing</a>
+        <a href="#retention">Retention</a>
+        <a href="#security">Security</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <p>Hokushin Privacy Policy</p>
+      </div>
+    </footer>
+  </body>
+</html>
